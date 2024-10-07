@@ -1,4 +1,4 @@
-class MobileNavbar {
+class MobileNavbar  {
   constructor() {
     this.mobileMenu = document.querySelector(".mobile-menu"); 
     this.navList = document.querySelector(".nav-list-mobile"); 
