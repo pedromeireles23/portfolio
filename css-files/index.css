@@ -116,6 +116,7 @@ header nav ul li a:hover:after{
   background: black;
   width: 100%;
   transition: 0.3s ease-in;
+  z-index: 11;
 }
 .nav-list-mobile.active{
   display: block;
