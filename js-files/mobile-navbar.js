@@ -40,15 +40,3 @@ const mobileNavbar = new MobileNavbar(
   ".nav-list-mobile li",
 );
 mobileNavbar.init();
-
-  // const navList = document.querySelector(".nav-list-mobile");
-  
-  // const mobileMenu = document.querySelector(".mobile-menu");
-  // mobileMenu.addEventListener("click", ()=> 
-    
-  //   navList.classList.toggle('open'),
-  //   mobileMenu.classList.toggle('open')
-  
-  
-  
-  // );
