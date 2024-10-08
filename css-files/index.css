@@ -130,9 +130,21 @@ header nav ul li a:hover:after{
     flex-direction: column;
     align-content: center;
     align-items: center;
+    gap: 0px;
   }
   .nav-list-mobile nav ul li{
     opacity: 0;
+  }
+  header nav ul li a:hover:after{
+    width: 0%;
+  }
+  .nav-links{
+    width: 100%;
+    text-align: center;
+    padding: 25px 0px;
+  }
+  .nav-links:hover{
+    background: #5175ff;
   }
   .nav-list-desktop{
     display: none;
