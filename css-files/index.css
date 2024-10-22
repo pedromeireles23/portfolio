@@ -39,25 +39,33 @@ h1{
   
 
 }
-.reveal-circle {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 0;
-  height: 0;
-  background-color: white;
-  border-radius: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 1;
-  transition: width 1.5s ease-in-out, height 1.5s ease-in-out;
-}
-.expand {
-  width: 100vw;
-  height: 100vh;
-}
+
 .appear-elements{
   display: flex!important;
+  opacity: 0; 
+  animation: fadeIn 1s ease-in forwards; 
 }
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes scrollAnimation{
+  from{
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  to{
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
+
+
 header, section, footer{
   display: none!important;
 }
@@ -202,7 +210,7 @@ header nav ul li a:hover:after{
   background-repeat: no-repeat;
   justify-content: center;
   align-items: center; 
-  height: 110vh;
+  height: 100vh;
 }
 .hero-banner-container{
   max-width: 1220px;
@@ -283,17 +291,108 @@ header nav ul li a:hover:after{
   }
 
 }
+
+.academic-training-container, .certifications-container{
+  width: 1220px;
+  display: flex;
+  gap: 40px;
+  margin-top: 40px;
+
+
+}
+
+.academic-training-container div p{
+  text-align: justify;
+}
+.academic-training-container div svg{
+  height: 70px;
+}
+.container-academic-training{
+  width: 50%;
+  background-color: white;
+  padding: 40px;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  animation: scrollAnimation linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 40%;
+}
+.academic-training h2{
+  animation: scrollAnimation linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 40%;
+}
+.container-academic-training .blue-container {
+  height: 70%;
+  width: 20px;
+  position: absolute;
+  background-color: #5175ff;
+  left: -10px;
+
+}
+.certifications-container-son{
+  width: 33%;
+  background-color: white;
+  padding: 40px;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  gap: 10px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  animation: scrollAnimation linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 40%;
+}
+.certifications h2{
+  animation: scrollAnimation linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 40%;
+}
+.container-certification-image{
+  display: flex;
+  color: #5175ff;
+  font-weight: 700;
+  gap:20px;
+  justify-content: center;
+  align-items: center;
+}
+.certifications-container-son .blue-container02{
+  height: 50%;
+  width: 10px;
+  position: absolute;
+  background-color: #5175ff;
+  left: -5px;
+}
+.certifications-container-son:hover{
+  transform: scale(1.1);
+  
+}
+.certifications-container{
+  transition: opacity 0.6s ease;
+}
+.certifications-container:hover > :not(:hover){
+  opacity: 0.4;
+}
+
+
 /* ABOUT ME SECTION */
 
-.about-me{
+
+
+.about-me, .academic-training, .certifications{
   padding: 80px 0px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 20px;
+ 
 }
-.about-me h2, .projects-section h2{
+.about-me h2, .projects-section h2, .academic-training h2, .certifications h2{
     font-size: 32px;
     color:black;
     font-weight: 900;
@@ -303,7 +402,7 @@ header nav ul li a:hover:after{
     background: transparent;
   
   }
-.about-me h2::after , .projects-section h2::after{
+.about-me h2::after , .projects-section h2::after, .academic-training h2::after, .certifications h2::after{
   
     content: ''; 
     position: absolute; 
@@ -323,6 +422,19 @@ header nav ul li a:hover:after{
   font-weight: 500;
   max-width: 1220px;
   text-align: justify;
+  animation: scrollAnimation linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 40%;
+}
+.about-me h2{
+  animation: scrollAnimation linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 40%;
+}
+.about-me h3{
+  animation: scrollAnimation linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 40%;
 }
 .projects-section{
   padding: 80px 0px;
@@ -331,6 +443,7 @@ header nav ul li a:hover:after{
   justify-content: center;
   align-items: center;
   gap: 40px;
+
 }
 .projects-section p {
   font-size: 20px;

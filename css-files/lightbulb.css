@@ -46,14 +46,14 @@
 
 }
 
-.linhas{
+/* .linhas{
 
-}
+} */
 
 
 
-/* 
-.line1 {
+
+.line-bulb1 {
     width: 5px;
     background: white;
     height: 15px;
@@ -62,7 +62,7 @@
     transform: rotate(-45deg); top: -30px; right: 30px; 
 }
 
-.line2{
+.line-bulb2{
     width: 5px;
     background: white;
     height: 30px;
@@ -72,7 +72,7 @@
     top: -70px;
 }
 
-.line3{
+.line-bulb3{
     width: 5px;
     background: white;
     height: 15px;
@@ -81,7 +81,7 @@
     transform: rotate(45deg); top: -75px; left: 30px; 
 }
 
-.line4{
+.line-bulb4{
     width: 5px;
     background: white;
     height: 30px;
@@ -90,14 +90,14 @@
     transform: rotate(-60deg); top: -85px; right: 60px;
 }
 
-.line5{
+.line-bulb5{
     width: 5px;
     background: white;
     height: 30px;
     position: relative;
     border-radius: 20px;
     transform: rotate(60deg); top: -110px; left: 60px;
-} */
+}
 
 @keyframes float {
     0%, 100% {
