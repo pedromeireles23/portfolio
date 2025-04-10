@@ -78,12 +78,19 @@ h3{
   text-transform: uppercase;
   margin-bottom: 20px;
 }
+
+#mainHeader {
+  transition: top 0.4s ease, opacity 0.4s ease;
+}
 header{
   background-color: black;
   display: flex;
   width: 100%;
   padding: 25px;
-
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
 }
 header div{
   width: 50%;
@@ -115,6 +122,9 @@ header nav ul li a:after{
   width: 0; 
   background-color: #5175ff;
 }
+/* header nav ul li a.active-nav-bar::after {
+  width: 100%;
+} */
 
 header nav ul li a:hover:after{
   width: 100%;
@@ -122,6 +132,7 @@ header nav ul li a:hover:after{
 .mobile-menu{
   display: none;
   cursor: pointer;
+
 
 }
 .mobile-menu div{
@@ -183,14 +194,21 @@ header nav ul li a:hover:after{
   header nav ul li a:hover:after{
     width: 0%;
   }
-  .nav-links{
+  .nav-list-mobile li {
+    width: 100%;
+  }
+
+  .nav-links a {
     width: 100%;
     text-align: center;
     padding: 25px 0px;
+    display: block;
+    height: 100%;
   }
-  .nav-links:hover{
+ 
+  /* .nav-links:hover{
     background: #5175ff;
-  }
+  } */
   .nav-list-desktop{
     display: none;
   }
@@ -206,7 +224,7 @@ header nav ul li a:hover:after{
   width: 100%;
   background-image: url(../images/hero-banner-portfolio-03-min.jpg);
   background-size: cover;
-  background-position: center;
+  background-position: left;
   background-repeat: no-repeat;
   justify-content: center;
   align-items: center; 
@@ -300,7 +318,9 @@ header nav ul li a:hover:after{
 
 
 }
-
+.desktop-licence{
+  display: none;
+}
 .academic-training-container div p{
   text-align: justify;
 }

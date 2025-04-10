@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css-files/lightbulb.css" />
     <link rel="stylesheet" href="css-files/index.css" />
+    <link rel="stylesheet" href="css-files/responsive.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -19,7 +20,7 @@
   </head>
 
   <body>
-    <header class="general-class">
+    <header class="general-class" id="main-header">
       <div>
         <h1>PORTFÓLIO.</h1>
       </div>
@@ -31,10 +32,10 @@
       <div class="nav-list-desktop">
         <nav>
           <ul>
-            <li><a href="">HOME</a></li>
-            <li><a href="">ABOUT</a></li>
-            <li><a href="">WORK</a></li>
-            <li><a href="">CONTACT</a></li>
+            <li><a href="#home">HOME</a></li>
+            <li><a href="#about-me ">ABOUT</a></li>
+            <li><a href="#projects">WORK</a></li>
+            <li><a href="#contact">CONTACT</a></li>
           </ul>
         </nav>
       </div>
@@ -44,10 +45,10 @@
       <div class="nav-list-mobile">
         <nav>
           <ul>
-            <li class="nav-links"><a href="">HOME</a></li>
-            <li class="nav-links"><a href="">ABOUT</a></li>
-            <li class="nav-links"><a href="">WORK</a></li>
-            <li class="nav-links"><a href="">CONTACT</a></li>
+            <li class="nav-links"><a href="#home">HOME </a></li>
+            <li class="nav-links"><a href="#about-me">ABOUT</a></li>
+            <li class="nav-links"><a href="#projects">WORK</a></li>
+            <li class="nav-links"><a href="#contact">CONTACT</a></li>
           </ul>
         </nav>
       </div>
@@ -77,7 +78,7 @@
 
     <!-- HERO BANNER -->
 
-    <section class="hero-banner general-class">
+    <section class="hero-banner general-class" id="home">
       <div class="hero-banner-container">
         <div></div>
         <div>
@@ -91,21 +92,14 @@
     </section>
 
     <!-- ABOUT ME SECTION -->
-    <section class="about-me general-class">
+    <section class="about-me general-class" id="about-me">
       <h2>sobre mim</h2>
-      <h3>pedro meireles</h3>
+      <!-- <h3>pedro meireles</h3> -->
       <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed iaculis
-        rutrum nulla sit amet blandit. Phasellus id metus et est venenatis
-        feugiat. Duis fringilla leo non facilisis viverra. Sed sed lacinia
-        lacus. Duis bibendum lorem ipsum, a rutrum enim consectetur a. Donec nec
-        imperdiet erat. Donec sit amet neque efficitur, maximus nulla et, auctor
-        urna. Quisque libero lorem, hendrerit vel erat eu, bibendum efficitur
-        ex. Proin vitae lobortis lectus. Mauris ac fringilla urna. Ut dignissim
-        pellentesque facilisis. Nunc semper et augue eget sodales. Etiam nibh
-        dolor, tincidunt sed fermentum sit amet, accumsan sed erat. Nulla id
-        maximus nisi, et volutpat lectus. Etiam efficitur mauris libero,
-        consectetur tincidunt ex vestibulum et. Nulla facilisi.
+        Olá, sou Pedro Meireles, um entusiasta da tecnologia com uma paixão pelo desenvolvimento e uma busca constante por conhecimento. Como técnico em tecnologia da informação formado pelo SENAI e atualmente estudante de Ciências da Computação na UNA, estou comprometido em expandir minha expertise e explorar novos horizontes.
+      </p>
+      <p>
+        Minha jornada no mundo da tecnologia começou com a formação em desenvolvimento web, onde adquiri sólidos conhecimentos em linguagens de programação e práticas de design. Minha atual trajetória acadêmica na Ciências da Computação está me proporcionando uma compreensão mais profunda dos fundamentos da computação e abrindo portas para a inovação.
       </p>
     </section>
 
@@ -205,59 +199,84 @@
     </section>
 
     <section class="certifications general-class">
-      <h2>Licenças e certificados</h2>
+      <h2 class="mobile-licence">Licenças e certificados</h2>
+      <h2 class="desktop-licence">Licenças e</h2>
+      <h2 class="desktop-licence">certificados</h2>
       <div class="certifications-container">
         <div class="certifications-container-son">
           <div class="blue-container02"></div>
           <div class="container-certification-image">
-            <img src="images/escola-conquer.png  " alt="conquer" width="45" height="50" />
+            <img
+              src="images/escola-conquer.png  "
+              alt="conquer"
+              width="45"
+              height="50"
+            />
             <a
-              href="https://escolaconquer.com.br/" target="_blank" rel="noopener noreferrer"
+              href="https://escolaconquer.com.br/"
+              target="_blank"
+              rel="noopener noreferrer"
               ><p>SEO Avançado: mensuração da estratégia</p></a
             >
           </div>
-          <p style="margin-left: 66px;">Escola Conquer</p>
+          <p style="margin-left: 66px">Escola Conquer</p>
         </div>
 
         <div class="certifications-container-son">
           <div class="blue-container02"></div>
           <div class="container-certification-image">
-            <img src="images/Udemy-Logo.png" alt="udemy-logo" width="45" height="50" />
+            <img
+              src="images/Udemy-Logo.png"
+              alt="udemy-logo"
+              width="45"
+              height="50"
+            />
             <a
-              href="https://www.udemy.com/course/the-complete-web-development-bootcamp" target="_blank" rel="noopener noreferrer"
+              href="https://www.udemy.com/course/the-complete-web-development-bootcamp"
+              target="_blank"
+              rel="noopener noreferrer"
               ><p>The Complete 2024 Web Development Bootcamp</p></a
             >
           </div>
-          <p style="margin-left: 66px;">Udemy</p>
+          <p style="margin-left: 66px">Udemy</p>
         </div>
         <div class="certifications-container-son">
           <div class="blue-container02"></div>
           <div class="container-certification-image">
-            <img src="images/Udemy-Logo.png" alt="udemy-logo" width="45" height="50" />
+            <img
+              src="images/Udemy-Logo.png"
+              alt="udemy-logo"
+              width="45"
+              height="50"
+            />
             <a
-              href="https://www.udemy.com/course/curso-de-seo-2022-rodrigo-bueno" target="_blank" rel="noopener noreferrer"
-              ><p>Curso de SEO 2024 - Do zero até a primeira posição no GOOGLE</p></a
+              href="https://www.udemy.com/course/curso-de-seo-2022-rodrigo-bueno"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><p>
+                Curso de SEO 2024 - Do zero até a primeira posição no GOOGLE
+              </p></a
             >
           </div>
-          <p style="margin-left: 66px;">Udemy</p>
+          <p style="margin-left: 66px">Udemy</p>
         </div>
       </div>
     </section>
 
     <!-- PROJECTS SECTION -->
 
-    <section class="projects-section general-class">
+    <section class="projects-section general-class" id="projects">
       <h2>projetos</h2>
 
       <p>WebSites</p>
       <div class="websites-projects">
         <div class="images-website-container">
-          <a href=""
+          <a href="https://cadastro.eurovillevolvo.com.br/marque-seu-teste-drive-ex30/" target="_blank"
             ><img src="images/volvo-site-min.png" alt="" class="images-website"
           /></a>
         </div>
         <div class="images-website-container">
-          <a href=""
+          <a href="https://milausa.com/" target="_blank"
             ><img
               src="images/milausa-site-min.png"
               alt=""
@@ -265,7 +284,7 @@
           /></a>
         </div>
         <div class="images-website-container">
-          <a href=""
+          <a href="https://www.mrbeanfeijoada.com/" target="_blank"
             ><img
               src="images/mrbean-feijoada-min.png"
               alt=""
@@ -275,7 +294,7 @@
       </div>
       <div class="websites-projects">
         <div class="images-website-container">
-          <a href=""
+          <a href="#"
             ><img
               src="images/consortemoveis-min.png"
               alt=""
@@ -283,7 +302,7 @@
           /></a>
         </div>
         <div class="images-website-container">
-          <a href=""
+          <a href="https://ocupacional.com.br/site/" target="_blank"
             ><img
               src="images/ocupacional-site-min.png"
               alt=""
@@ -291,7 +310,7 @@
           /></a>
         </div>
         <div class="images-website-container">
-          <a href=""
+          <a href="#"
             ><img
               src="images/wsouza-site-min.png"
               alt=""
@@ -301,7 +320,7 @@
       </div>
       <div class="websites-projects">
         <div class="images-website-container">
-          <a href=""
+          <a href="https://vjrseguros.com.br/" target="_blank"
             ><img
               src="images/vjr-seguros-min.png"
               alt=""
@@ -309,7 +328,7 @@
           /></a>
         </div>
         <div class="images-website-container">
-          <a href=""
+          <a href="#"
             ><img
               src="images/usecorp-site-min.png"
               alt=""
@@ -317,7 +336,7 @@
           /></a>
         </div>
         <div class="images-website-container">
-          <a href=""
+          <a href="https://vmayer.com.br/" target="_blank"
             ><img
               src="images/vmayer-site-min.png"
               alt=""
@@ -327,7 +346,7 @@
       </div>
     </section>
 
-    <footer class="general-class">
+    <footer class="general-class" id="contact">
       <div class="contact">
         <h2>contato</h2>
       </div>
@@ -392,5 +411,7 @@
     </footer>
     <script src="js-files/mobile-navbar.js"></script>
     <script src="js-files/lightbulb.js"></script>
+    <script src="js-files/header-scroll.js"></script>
+    <script src="js-files/intersection-observer-header.js"></script>
   </body>
 </html>
