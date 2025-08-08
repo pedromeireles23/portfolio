@@ -1,0 +1,190 @@
+@media (max-width: 767px) {
+  .hero-banner {
+    flex-direction: column;
+    padding: 0 20px 70px 20px;
+    justify-content: center;
+    align-items: start;
+    height: 100dvh;
+    background-image: url(../images/hero-banner-mobile.jpeg);
+  }
+    
+  .hero-banner-container {
+    flex-direction: column;
+  }
+    
+  .hero-banner-container div {
+    width: 100%;
+    text-align: left;
+  }
+    
+  .hero-banner h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #91a5fc;
+    width: 100px;
+  }
+    
+  .hero-banner p {
+    font-size: 18px;
+    color: #91a5fc;
+  }
+
+
+      .hero-banner .developer {
+        font-size: 18px;
+        padding: 12px 12px 12px 3px;
+        text-align: center;
+      }
+    
+      .auto-type {
+        font-size: 16px;
+        padding-right: 3px;
+        transform: translateY(2rem);
+      }
+    
+      .auto-type::after {
+        width: 0.2rem;
+      }
+
+
+
+      .about-me, .academic-training, .certifications {
+        padding: 40px 20px;
+        gap: 16px;
+      }
+
+      .academic-training-container, .certifications-container{
+        width: 100%;
+        flex-direction: column;
+      }
+      .certifications-container-son{
+        width: 100%;
+      }
+      .container-academic-training{
+        width: 100%;
+
+      }
+      
+      .academic-training-container div p{
+        text-align: left;
+      }
+    
+      .about-me h2, 
+      .projects-section h2, 
+      .academic-training h2, 
+      .certifications h2 {
+        font-size: 24px;
+        text-align: center;
+        line-height: 1.2;
+      }
+      .desktop-licence{
+        display: block;
+      }
+    .mobile-licence{
+      display: none;
+    }
+      .about-me h2::after, 
+      .projects-section h2::after, 
+      .academic-training h2::after, 
+      .certifications h2::after {
+        height: 14px;
+        width: 110%;
+      }
+    
+      .about-me p {
+        font-size: 16px;
+        text-align: left;
+        padding: 0 5px;
+      }
+    
+      .about-me h3 {
+        font-size: 18px;
+        text-align: center;
+      }
+
+      .projects-section {
+        padding: 40px 20px;
+        gap: 24px;
+      }
+    
+      .projects-section h2 {
+        font-size: 24px;
+        text-align: center;
+      }
+    
+      .projects-section p {
+        font-size: 14px;
+        margin-top: -10px;
+        text-align: center;
+      }
+    
+      .projects-section p::after {
+        height: 3px;
+        width: 100%;
+      }
+    
+      .websites-projects {
+        flex-direction: column;
+        gap: 20px;
+        padding: 0 10px;
+      }
+
+  footer {
+    flex-direction: column;
+    padding: 40px 20px;
+    gap: 40px;
+    align-items: center;
+  }
+
+  footer div {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .contact{
+    align-items: center;
+  }
+
+  footer h2 {
+    font-size: 24px;
+  }
+
+  footer p {
+    font-size: 14px;
+    line-height: 1.5;
+  }
+
+  .icons {
+    gap: 20px;
+    height: auto;
+  }
+
+  .icons nav ul {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .means-of-contact {
+    align-items: center;
+  }
+
+  .social-icons {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .social-icons a {
+    height: 56px;
+    width: 56px;
+    padding: 0.8em;
+  }
+
+  .means-of-contact p {
+    font-size: 16px;
+    margin-top: 10px;
+  }
+
+}
