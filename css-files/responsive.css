@@ -7,132 +7,131 @@
     height: 100dvh;
     background-image: url(../images/hero-banner-mobile.jpeg);
   }
-    
+
   .hero-banner-container {
     flex-direction: column;
   }
-    
+
   .hero-banner-container div {
     width: 100%;
     text-align: left;
   }
-    
+
   .hero-banner h2 {
     font-size: 32px;
     margin-bottom: 20px;
     color: #91a5fc;
     width: 100px;
   }
-    
+
   .hero-banner p {
     font-size: 18px;
     color: #91a5fc;
   }
 
+  .hero-banner .developer {
+    font-size: 18px;
+    padding: 12px 12px 12px 3px;
+    text-align: center;
+  }
 
-      .hero-banner .developer {
-        font-size: 18px;
-        padding: 12px 12px 12px 3px;
-        text-align: center;
-      }
-    
-      .auto-type {
-        font-size: 16px;
-        padding-right: 3px;
-        transform: translateY(2rem);
-      }
-    
-      .auto-type::after {
-        width: 0.2rem;
-      }
+  .auto-type {
+    font-size: 16px;
+    padding-right: 3px;
+    transform: translateY(2rem);
+  }
 
+  .auto-type::after {
+    width: 0.2rem;
+  }
 
+  .about-me,
+  .academic-training,
+  .certifications {
+    padding: 40px 20px;
+    gap: 16px;
+  }
 
-      .about-me, .academic-training, .certifications {
-        padding: 40px 20px;
-        gap: 16px;
-      }
+  .academic-training-container,
+  .certifications-container {
+    width: 100%;
+    flex-direction: column;
+  }
+  .certifications-container-son {
+    width: 100%;
+  }
+  .container-academic-training {
+    width: 100%;
+  }
 
-      .academic-training-container, .certifications-container{
-        width: 100%;
-        flex-direction: column;
-      }
-      .certifications-container-son{
-        width: 100%;
-      }
-      .container-academic-training{
-        width: 100%;
+  .academic-training-container div p {
+    text-align: left;
+  }
 
-      }
-      
-      .academic-training-container div p{
-        text-align: left;
-      }
-    
-      .about-me h2, 
-      .projects-section h2, 
-      .academic-training h2, 
-      .certifications h2 {
-        font-size: 24px;
-        text-align: center;
-        line-height: 1.2;
-      }
-      .desktop-licence{
-        display: block;
-      }
-    .mobile-licence{
-      display: none;
-    }
-      .about-me h2::after, 
-      .projects-section h2::after, 
-      .academic-training h2::after, 
-      .certifications h2::after {
-        height: 14px;
-        width: 110%;
-      }
-    
-      .about-me p {
-        font-size: 16px;
-        text-align: left;
-        padding: 0 5px;
-      }
-    
-      .about-me h3 {
-        font-size: 18px;
-        text-align: center;
-      }
+  .about-me h2,
+  .projects-section h2,
+  .academic-training h2,
+  .certifications h2 {
+    font-size: 24px;
+    text-align: center;
+    line-height: 1.2;
+  }
+  .desktop-licence {
+    display: block;
+  }
+  .mobile-licence {
+    display: none;
+  }
+  .about-me h2::after,
+  .projects-section h2::after,
+  .academic-training h2::after,
+  .certifications h2::after {
+    height: 14px;
+    width: 110%;
+  }
 
-      .projects-section {
-        padding: 40px 20px;
-        gap: 24px;
-      }
-    
-      .projects-section h2 {
-        font-size: 24px;
-        text-align: center;
-      }
-    
-      .projects-section p {
-        font-size: 14px;
-        margin-top: -10px;
-        text-align: center;
-      }
-    
-      .projects-section p::after {
-        height: 3px;
-        width: 100%;
-      }
-    
-      .websites-projects {
-        flex-direction: column;
-        gap: 20px;
-        padding: 0 10px;
-      }
+  .about-me p {
+    font-size: 16px;
+    text-align: left;
+    padding: 0 5px;
+  }
+
+  .about-me h3 {
+    font-size: 18px;
+    text-align: center;
+  }
+
+  .projects-section {
+    padding: 40px 20px;
+    gap: 24px;
+  }
+
+  .projects-section h2 {
+    font-size: 24px;
+    text-align: center;
+  }
+
+  .projects-section p {
+    font-size: 14px;
+    margin-top: -10px;
+    text-align: center;
+  }
+
+  .projects-section p::after {
+    height: 3px;
+    width: 100%;
+  }
+
+  .websites-projects {
+    flex-direction: column;
+    gap: 20px;
+    padding: 0 10px;
+  }
 
   footer {
     flex-direction: column;
     padding: 40px 20px;
-    gap: 40px;
+    gap: 20px;
     align-items: center;
   }
 
@@ -142,7 +141,7 @@
     align-items: center;
     text-align: center;
   }
-  .contact{
+  .contact {
     align-items: center;
   }
 
@@ -161,7 +160,7 @@
   }
 
   .icons nav ul {
-    flex-direction: column;
+    flex-direction: row;
     gap: 20px;
   }
 
@@ -186,5 +185,4 @@
     font-size: 16px;
     margin-top: 10px;
   }
-
 }
