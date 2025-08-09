@@ -1,4 +1,7 @@
 
+/* ========================================
+   LIGHTBULB INTRO STYLES
+======================================== */
 * {
   margin: 0;
   padding: 0;
@@ -6,6 +9,7 @@
   font-family: "Sora", sans-serif;
 }
 
+/* Main lightbulb container */
 .lightbulb {
   height: 100vh;
   background-color: black;
@@ -13,94 +17,105 @@
   justify-content: center;
   align-items: center;
 }
-.body-teste {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    position: relative;
-    animation: float 3s ease-in-out infinite;
 
+/* Lightbulb content wrapper with floating animation */
+.body-teste {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  position: relative;
+  animation: float 3s ease-in-out infinite;
 }
 
+/* SVG lightbulb icon */
 .body-teste svg {
-    width: 100px;
-    height: 100px;
-    fill: white;
-    margin-top: -30px;
-    position: absolute;
-    
-
-    
+  width: 100px;
+  height: 100px;
+  fill: white;
+  margin-top: -30px;
+  position: absolute;
+  cursor: pointer;
+  transition: all 0.3s ease;
 } 
 
-.body-teste svg:hover{
-    fill: #91a5fc;
-    cursor: pointer;
-    filter: drop-shadow(0 0 80px #91a5fc);
+/* Lightbulb hover effects */
+.body-teste svg:hover {
+  fill: #91a5fc;
+  filter: drop-shadow(0 0 80px #91a5fc);
 }
 
+/* Light rays hover effect */
 .body-teste svg:hover ~ .linhas {
-    background-color: #91a5fc;
-
+  background-color: #91a5fc;
 }
 
-
-
-
-
+/* Light rays around the lightbulb */
 .line-bulb1 {
-    width: 5px;
-    background: white;
-    height: 15px;
-    border-radius: 20px;
-    position: relative;
-    transform: rotate(-45deg); top: -30px; right: 30px; 
+  width: 5px;
+  background: white;
+  height: 15px;
+  border-radius: 20px;
+  position: relative;
+  transform: rotate(-45deg);
+  top: -30px;
+  right: 30px;
+  transition: background-color 0.3s ease;
 }
 
-.line-bulb2{
-    width: 5px;
-    background: white;
-    height: 30px;
-    position: relative;
-    border-radius: 20px;
-    top: 15px;
-    top: -70px;
+.line-bulb2 {
+  width: 5px;
+  background: white;
+  height: 30px;
+  position: relative;
+  border-radius: 20px;
+  top: -70px;
+  transition: background-color 0.3s ease;
 }
 
-.line-bulb3{
-    width: 5px;
-    background: white;
-    height: 15px;
-    position: relative;
-    border-radius: 20px;
-    transform: rotate(45deg); top: -75px; left: 30px; 
+.line-bulb3 {
+  width: 5px;
+  background: white;
+  height: 15px;
+  position: relative;
+  border-radius: 20px;
+  transform: rotate(45deg);
+  top: -75px;
+  left: 30px;
+  transition: background-color 0.3s ease;
 }
 
-.line-bulb4{
-    width: 5px;
-    background: white;
-    height: 30px;
-    position: relative;
-    border-radius: 20px;
-    transform: rotate(-60deg); top: -85px; right: 60px;
+.line-bulb4 {
+  width: 5px;
+  background: white;
+  height: 30px;
+  position: relative;
+  border-radius: 20px;
+  transform: rotate(-60deg);
+  top: -85px;
+  right: 60px;
+  transition: background-color 0.3s ease;
 }
 
-.line-bulb5{
-    width: 5px;
-    background: white;
-    height: 30px;
-    position: relative;
-    border-radius: 20px;
-    transform: rotate(60deg); top: -110px; left: 60px;
+.line-bulb5 {
+  width: 5px;
+  background: white;
+  height: 30px;
+  position: relative;
+  border-radius: 20px;
+  transform: rotate(60deg);
+  top: -110px;
+  left: 60px;
+  transition: background-color 0.3s ease;
 }
 
+/* Floating animation keyframes */
 @keyframes float {
-    0%, 100% {
-        transform: translateY(0); 
-    }
-    50% {
-        transform: translateY(-20px);
-    }
+  0%, 100% {
+    transform: translateY(0); 
+  }
+  50% {
+    transform: translateY(-20px);
+  }
 }
