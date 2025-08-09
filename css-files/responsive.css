@@ -209,7 +209,20 @@
 /* ========================================
    TABLET RESPONSIVE (768px - 1023px)
 ======================================== */
+/* Hide tablet projects on desktop and mobile by default */
+.projects-tablet {
+  display: none !important;
+}
+
 @media (min-width: 768px) and (max-width: 1023px) {
+  /* Hide desktop projects and show tablet projects on tablet */
+  .projects-desktop {
+    display: none !important;
+  }
+  
+  .projects-tablet {
+    display: flex !important;
+  }
   .hero-banner {
     flex-direction: column;
     padding: 0 40px 70px 40px;
@@ -330,35 +343,35 @@
     text-align: center;
   }
 
-  .projects-section {
+  .projects-tablet {
     padding: 60px 40px;
     gap: 30px;
   }
 
-  .projects-section h2 {
+  .projects-tablet h2 {
     font-size: 28px;
     text-align: center;
   }
 
-  .projects-section p {
+  .projects-tablet p {
     font-size: 16px;
     margin-top: -10px;
     text-align: center;
   }
 
-  .projects-section p::after {
+  .projects-tablet p::after {
     height: 4px;
     width: 100%;
   }
 
-  .websites-projects {
+  .projects-tablet .websites-projects {
     flex-wrap: wrap;
     gap: 25px;
     padding: 0 20px;
     justify-content: center;
   }
 
-  .images-website-container {
+  .projects-tablet .images-website-container {
     width: calc(50% - 12.5px);
     max-width: 350px;
   }
